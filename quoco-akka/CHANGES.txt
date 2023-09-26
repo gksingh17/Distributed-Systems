@@ -1,0 +1,17 @@
+Mainly followed instructions from the PDFs.
+Used code snippets from slides provided on moodle.
+Used some of the same code samples seen on demonstration videos.
+Reformatted code.
+
+had to change port to 0 from 2551 for broker , to avoid port always in use Tried killing the port in use, still got the error. By setting to 0 , port is chosen automatically. 
+
+To run the project:
+- mvn clean install 
+- mvn compile 
+- mvn compile exec:java -pl broker (new terminal)
+
+- mvn compile exec:java -pl auldfellas (new terminal)
+- mvn compile exec:java -pl girlpower (new terminal) 
+- mvn compile exec:java -pl dodgydrivers (new terminal)
+
+- mvn compile exec:java -pl client 

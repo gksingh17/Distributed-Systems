@@ -1,0 +1,18 @@
+Kindly note this submission of quoco-jms executes till Task 3
+which is individually running all the services to get the quoations.
+I have implemented task 4 , however couldn't make it work due to 
+some wrong logic perphas. Rem asked me to make two submissons one with 
+partial implementaton of task 4 so that i could be considered for a better 
+grade. I have made changes in client as well as broker, implemented the threads too.
+
+
+For executing quoco-jms (Kindly make sure the path is correct)
+- mvn clean install
+- mvn compile 
+- mvn compile exec:java -pl auldfellas
+- mvn compile exec:java -pl girlpower 
+- mvn compile exec:java -pl dodgydrivers 
+- mvn compile exec:java -pl client
+
+
+http://localhost:8161/ 

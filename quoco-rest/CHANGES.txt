@@ -1,0 +1,46 @@
+Mainly followed instructions from the PDFs.
+Used code snippets from slides provided on moodle.
+Used some of the same code samples seen on demonstration videos.
+Reformatted code.
+Attached screenshots for tasks.
+
+To run the project:
+- mvn clean install
+- mvn compile 
+- mvn spring-boot:run -pl auldfellas (new terminal)
+- mvn spring-boot:run -pl dodgydrivers (new terminal)
+- mvn spring-boot:run -pl girlpower (new terminal) 
+- execute mvn spring-boot:run in broker and then in client (new terminals)
+
+
+To run the project (with docker):
+- mvn clean install
+- mvn compile 
+- docker-compose build --no-cache 
+- docker-compose up
+
+To Check : 
+
+Open Postman to check APIs
+
+- copy and paste below code in Body (raw, JSON type)
+
+{
+	"name" : "Rem Collier",
+	"gender" : "M",
+	"age" : 46,
+	"points" : 0,
+	"noClaims" : 0,
+	"licenseNumber" : "ABC123"
+}
+
+http://localhost:8081/quotations -> POST 
+
+Service Ports : 
+
+auldfellas -  http://localhost:8081/quotations
+dodgydrivers - http://localhost:8082/quotations
+girlpower - http://localhost:8083/quotations
+
+
+

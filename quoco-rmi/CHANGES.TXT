@@ -1,0 +1,18 @@
+Mainly followed instructions from the PDFs.
+However, some instruction package names did not match code snippet package names, hence I modified them as needed. 
+Added toString() method to the ClientInfo and QuatationService classes for debugging purposes.
+Added Maven Assembly plugin in all pom.xml files to make jar including dependencies. 
+Reformatted code. 
+
+To run the project:
+- mvn install 
+- mvn exec:java -pl broker
+- mvn exec:java -pl <NAME_OF_QUOATATION_SERVICE> "-Dexec.args=localhost"
+- mvn exec:java -pl client "-Dexec.args=localhost"
+
+To run the project (using Docker):
+- mvn install 
+- mvn package
+- docker-compose build --no-cache
+- docker-compose up
+

@@ -1,0 +1,8 @@
+service\registry\ServiceRegistry.class
+service\core\AbstractQuotationService.class
+service\core\Quotation.class
+service\registry\Service.class
+service\core\QuotationService.class
+service\core\ClientInfo.class
+service\core\Constants.class
+service\core\BrokerService.class
